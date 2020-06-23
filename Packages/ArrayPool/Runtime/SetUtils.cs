@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Pools
+namespace DELTation.Pools
 {
     internal static class SetUtils
     {

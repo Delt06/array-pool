@@ -1,7 +1,7 @@
 {
     "name": "ArrayPool.Tests.Editor",
     "references": [
-        "GUID:b87cea1c44b1daf44b3eeb21f94804ae"
+        "GUID:9feb83cb9b0c6424a95ab7c5b675a19e"
     ],
     "includePlatforms": [
         "Editor"

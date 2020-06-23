@@ -1,4 +1,4 @@
-﻿namespace Pools
+﻿namespace DELTation.Pools
 {
     public static class ArrayPool<T>
     {

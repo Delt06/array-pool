@@ -1,4 +1,4 @@
-﻿namespace Pools
+﻿namespace DELTation.Pools
 {
     public interface IArrayPool<T>
     {

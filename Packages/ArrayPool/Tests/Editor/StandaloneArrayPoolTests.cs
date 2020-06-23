@@ -2,7 +2,7 @@
 using System.Linq;
 using NUnit.Framework;
 
-namespace Pools.Tests.Editor
+namespace DELTation.Pools.Tests.Editor
 {
     [TestFixture]
     public sealed class StandaloneArrayPoolTests

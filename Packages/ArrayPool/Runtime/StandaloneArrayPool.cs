@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Pools
+namespace DELTation.Pools
 {
     public sealed class StandaloneArrayPool<T> : IArrayPool<T>
     {
@@ -19,22 +19,11 @@ namespace Pools
             if (minLength <= 0) throw new ArgumentOutOfRangeException(nameof(minLength));
             if (minLength > MaxSupportedLength) throw new ArgumentOutOfRangeException(nameof(minLength));
 
-            var powerOfTwoLength = GetNextOrEqualPowerOfTwo(minLength);
+            var powerOfTwoLength = Powers.GetNextOrEqualPowerOfTwo(minLength, MaxSupportedLength);
             var rentedArray = GetOrCreateFreeArray(powerOfTwoLength);
             MarkAsRented(rentedArray);
 
             return rentedArray;
-        }
-
-        private int GetNextOrEqualPowerOfTwo(int length)
-        {
-            for (var powerOfTwo = 2; powerOfTwo <= MaxSupportedLength; powerOfTwo *= 2)
-            {
-                if (length == powerOfTwo) return length;
-                if (length < powerOfTwo) return powerOfTwo;
-            }
-            
-            throw new InvalidOperationException("Matching power of two was not found.");
         }
 
         private T[] GetOrCreateFreeArray(int length)
