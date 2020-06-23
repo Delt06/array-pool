@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Linq;
 using NUnit.Framework;
-using Pools;
 
-namespace Plugins.PoolsTests
+namespace Pools.Tests.Editor
 {
     [TestFixture]
     public sealed class StandaloneArrayPoolTests
