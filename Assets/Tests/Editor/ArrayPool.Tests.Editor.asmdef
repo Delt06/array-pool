@@ -1,5 +1,5 @@
 {
-    "name": "PoolsTests",
+    "name": "ArrayPool.Tests.Editor",
     "references": [
         "GUID:b87cea1c44b1daf44b3eeb21f94804ae"
     ],

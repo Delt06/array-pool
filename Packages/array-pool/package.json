@@ -1,0 +1,12 @@
+{
+  "name": "com.deltation.array_pool",
+  "version": "1.0.0",
+  "displayName": "Array Pool",
+  "description": "Helps in reducing GC allocations.",
+  "type": "library",
+  "author": {
+    "name": "DELTation",
+    "email": "vvkantaev@yandex.ru",
+    "url": "https://github.com/Delt06"
+  }
+}
